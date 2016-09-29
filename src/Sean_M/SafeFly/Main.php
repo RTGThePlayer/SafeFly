@@ -18,11 +18,11 @@ class Main extends PluginBase implements Listener {
 
      public function onEnable() {
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
-        $this->getLogger()->info(TextFormat::GREEN . "SafeFly by Sean_M enabled!");
+        $this->getLogger()->info("SafeFly by Sean_M enabled!");
      }
 
      public function onDisable() {
-        $this->getLogger()->info(TextFormat::RED . "SafeFly by Sean_M disabled!");
+        $this->getLogger()->info("SafeFly by Sean_M disabled!");
      }
    
      public function onEntityDamage(EntityDamageEvent $event) {
